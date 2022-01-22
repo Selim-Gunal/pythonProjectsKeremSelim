@@ -10,3 +10,4 @@ for x in range(0 ,1000):
         i = i + x
         if (x % 3 == 0):
             i = i - x
+print(i)
