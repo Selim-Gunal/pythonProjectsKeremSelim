@@ -8,7 +8,7 @@ z = 0
 u = 0
 sum = 0
 
-for i in range (0 ,8 ,1):
+while (x < 4000000 and y < 4000000 and z < 4000000 and u < 4000000):
     z = x + y
     if (z % 2 == 0):
         sum = sum + z
