@@ -2,7 +2,7 @@
 #Find the sum of all the multiples of 3 or 5 below 1000.
 
 i = 0
-x = 0
+
 for x in range(0 ,1000):
     if (x % 3 == 0):
         i = i + x
