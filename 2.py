@@ -8,6 +8,7 @@ z = 0
 u = 0
 sum_of_can_devide_two = 0
 
+#This while loop will give us a chance to get our numbers smaller than 4 million
 while (x < 4000000 and y < 4000000 and z < 4000000 and u < 4000000):
     z = x + y
     if (z % 2 == 0):
