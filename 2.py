@@ -6,19 +6,19 @@ x = 1
 y = 2
 z = 0
 u = 0
-sum = 0
+sum_of_can_devide_2 = 0
 
 while (x < 4000000 and y < 4000000 and z < 4000000 and u < 4000000):
     z = x + y
     if (z % 2 == 0):
-        sum = sum + z
+        sum_of_can_devide_2 = sum_of_can_devide_2 + z
     u = y + z
     if (u % 2 == 0):
-        sum = sum + u
+        sum_of_can_devide_2 = sum_of_can_devide_2 + u
     x = z + u
     if (x % 2 == 0):
-        sum = sum + x
+        sum_of_can_devide_2 = sum_of_can_devide_2 + x
     y = u + x
     if (y % 2 == 0):
-        sum = sum + y
-print(sum + 2)
+        sum_of_can_devide_2 = sum_of_can_devide_2 + y
+print(sum_of_can_devide_2 + 2)
