@@ -1,5 +1,6 @@
-#I made this code because python is a single threaded program moveover if i run it in a single python file
-#it runs about 40 minutes
+#I made this code because python is a single threaded program moveover if i this code only a single python file
+#It runs about 40 minutes
+#Think about a big work and i cut into a smaller pieces like in main1.py it tested 2 to 3000000000 if can it devide 600851475143
 
 
 #You must start code with this code then main1   main2   main3
