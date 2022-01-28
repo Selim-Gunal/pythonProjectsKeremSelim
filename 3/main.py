@@ -8,6 +8,7 @@
 
 import time
 
+start_count = time.perf_counter()
 time.sleep(780)
 
 #My variables
@@ -34,3 +35,6 @@ for i in range (0 ,len(numbers_list)):
     if (result > 0):
         break
 print(result)
+
+finish_count = time.perf_counter()
+print("Finished in" ,round(finish_count - start_count,2),"seconds")
