@@ -10,6 +10,7 @@ for i in range (2 ,21):
     for x in range (2 ,21):
         for_test = 0
         if (i == x):
+            #If the prime number and numbers are the same it will change it but x for loop will turn the number twice
             x = x + 1
         if (i % x == 0):
             for_test = -1
