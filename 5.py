@@ -17,7 +17,7 @@ for i in range (2 ,21):
     if (for_test == 0):
         prime_numbers.append(i)
 
-#I
+#The exact meaning is in the 5.txt
 for i in range (0 ,len(prime_numbers)):
     for x in range (4 ,0 ,-1):
         if (prime_numbers[i] ** x < 20):
