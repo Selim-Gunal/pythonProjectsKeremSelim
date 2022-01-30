@@ -13,7 +13,8 @@ for i in range (2 ,21):
             #If the prime number and numbers are the same it will change it but x for loop will turn the number twice
             x = x + 1
         if (i % x == 0):
-            for_test = -1
+            #If the number enter this part the variable (for_test) will change like an indicator and loop will end
+            for_test = - 1
             break
     if (for_test == 0):
         prime_numbers.append(i)
