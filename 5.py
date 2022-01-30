@@ -23,7 +23,7 @@ for i in range (2 ,21):
 for i in range (0 ,len(prime_numbers)):
     for x in range (4 ,0 ,-1):
         if (prime_numbers[i] ** x < 21):
-            #We need all of them to multiply
+            #We need all of the numbers to multiply
             sum_of_numbers = sum_of_numbers * prime_numbers[i] ** x
             #Here I did a break because i want only 2**4 if I don't use break it will do 2**4 * 2**3 * 2**2 * 2**1
             break
