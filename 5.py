@@ -1,11 +1,13 @@
 #2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 #What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
+#For this code we need numbers below 21 we will calculate the LCM of them
+
 sum_of_numbers = 1
 prime_numbers = []
 for_test = 0
 
-#This part of code will take the prime numbers below 20 and it will it to our list
+#This part of code will take the prime numbers below 21 and it will it to our list
 for i in range (2 ,21):
     for x in range (2 ,21):
         for_test = 0
