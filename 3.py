@@ -1,6 +1,8 @@
 #The prime factors of 13195 are 5, 7, 13 and 29.
 #What is the largest prime factor of the number 600851475143 ?
 
+#Be aware of this code because it will run about 50 minutes
+
 our_number = 600851475143
 numbers_can_devide = []
 result = 0
