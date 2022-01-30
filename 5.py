@@ -5,6 +5,7 @@ sum_of_numbers = 1
 prime_numbers = []
 for_test = 0
 
+#This part of code will take the prime numbers below 20 and it will it to our list
 for i in range (2 ,21):
     for x in range (2 ,21):
         for_test = 0
@@ -16,6 +17,7 @@ for i in range (2 ,21):
     if (for_test == 0):
         prime_numbers.append(i)
 
+#I
 for i in range (0 ,len(prime_numbers)):
     for x in range (4 ,0 ,-1):
         if (prime_numbers[i] ** x < 20):
