@@ -17,9 +17,7 @@ while (True):
             indicator = 1
             break
     i = i + 1
-    print(pythagorean_triplet_numbers)
     if (indicator == 1):
         break
 pythagorean_triplet_numbers.reverse()
-print(pythagorean_triplet_numbers)
 print(int(pythagorean_triplet_numbers[0] * pythagorean_triplet_numbers[1] * pythagorean_triplet_numbers[2]))
