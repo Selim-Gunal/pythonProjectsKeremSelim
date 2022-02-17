@@ -1,1 +1,0 @@
-print("Hi Kerem ve Selimo")
