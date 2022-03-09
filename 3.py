@@ -1,16 +1,10 @@
-#The prime factors of 13195 are 5, 7, 13 and 29.
-#What is the largest prime factor of the number 600851475143 ?
-
-#Be aware of this code because it will run about 50 minutes
-#Be aware of this code because it will run about 50 minutes
-#Be aware of this code because it will run about 50 minutes
-
+import math
 our_number = 600851475143
 numbers_can_devide = []
 result = 0
 
 #We need to find the numbers can devide to our number
-for i in range (2 ,600851475143 // 70 + 1):
+for i in range (2 ,(math.floor(math.sqrt(our_number)))):
     if(600851475143 % i == 0):
         numbers_can_devide.append(i)
 
@@ -25,3 +19,5 @@ for i in range (0 ,len(numbers_can_devide)):
     if(result > 0):
         break
 print(result)
+
+#Prints 6857
