@@ -22,18 +22,26 @@ myString = """08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 
 w = 20
 h = 20
-myArray= [[0 for x in range (w)] for y in range(h)]
+myArray= [[0 for x in range (h)] for y in range(w)]
 temp = 0
+straightColumn = False
+straighRow = True
 
 myString = myString.replace(" ","")
 myString = myString.replace("\n" ,"")
 
 
 
-for h in range(0, 20):
+for h in range (0, 20):
     for w in range(0, 20):
-        myArray[h][w] = myString[temp] + myString[temp + 1]
+        myArray[h][w] = int(myString[temp] + myString[temp + 1])
         temp = temp + 2
+print(myArray)
 
-for z in range(len(myArray)):
-    print(myArray[z])
+for h in range (0 ,20):
+    for w in range (0 ,20):
+        for i in range (0 ,8):
+            if (straighRow == False):
+                first = myArray[h][w]
+                second = myArray[h][w + 1]
+                thir
