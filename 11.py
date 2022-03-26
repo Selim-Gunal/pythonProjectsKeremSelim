@@ -39,24 +39,26 @@ for h in range (0, 20):
         myArray[h][w] = int(myString[temp] + myString[temp + 1])
         temp = temp + 2
 
-for test in range (0 ,2):
-    for h in range (0 ,20):
-        for w in range (0 ,20 ,4):
-            if (straighRow == False):
-                first = myArray[h][w]
-                second = myArray[h][w + 1]
-                third = myArray[h][w + 2]
-                forth = myArray[h][w + 3]
-                muliply = first * second * third * forth
-                if (muliply > greatest):
-                    greatest = muliply
+for h in range (0 ,20):
+    for w in range (0 ,20 ,4):
+        first = myArray[h][w]
+        second = myArray[h][w + 1]
+        third = myArray[h][w + 2]
+        forth = myArray[h][w + 3]
+        muliply = first * second * third * forth
+        if (muliply > greatest):
+            greatest = muliply
 
-            if (straighRow == True and diagonal == False):
+for h in range (0 ,20 ,4):
+    for w in range (0 ,20):
+        first = myArray[h][w]
+        second = myArray[h + 1][w]
+        third = myArray[h + 2][w]
+        forth = myArray[h + 3][w]
+        muliply = first * second * third * forth
+        if (muliply > greatest):
+            greatest = muliply
 
-
-    if (straighRow == True):
-        straightColumn = True
-
-    if (straighRow == False):
-        straighRow = True
-
+for h in range (0 ,12 ,4):
+    for w in range (0 ,12 ,4):
+        first = myArray
