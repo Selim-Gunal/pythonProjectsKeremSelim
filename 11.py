@@ -39,6 +39,8 @@ for h in range (0, 20):
         myArray[h][w] = int(myString[temp] + myString[temp + 1])
         temp = temp + 2
 
+
+
 for h in range (0 ,20):
     for w in range (0 ,20 ,4):
         first = myArray[h][w]
@@ -59,6 +61,13 @@ for h in range (0 ,20 ,4):
         if (muliply > greatest):
             greatest = muliply
 
-for h in range (0 ,12 ,4):
-    for w in range (0 ,12 ,4):
-        first = myArray
+for h in range (0 ,16 ,4):
+    for w in range (0 ,16 ,4):
+        first = myArray[h][w]
+        second = myArray[h + 1][w + 1]
+        third = myArray[h + 1][w + 1]
+        forth = myArray[h + 1][w + 1]
+        muliply = first * second * third * forth
+        if (muliply > greatest):
+            greatest = muliply
+
