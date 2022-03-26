@@ -26,6 +26,7 @@ myArray= [[0 for x in range (h)] for y in range(w)]
 temp = 0
 straightColumn = False
 straighRow = False
+diagonal = False
 greatest = 0
 
 myString = myString.replace(" ","")
@@ -38,7 +39,7 @@ for h in range (0, 20):
         myArray[h][w] = int(myString[temp] + myString[temp + 1])
         temp = temp + 2
 
-for test in range ()
+for test in range (0 ,2):
     for h in range (0 ,20):
         for w in range (0 ,20 ,4):
             if (straighRow == False):
@@ -50,8 +51,11 @@ for test in range ()
                 if (muliply > greatest):
                     greatest = muliply
 
+            if (straighRow == True and diagonal == False):
+
+
     if (straighRow == True):
-        straighRow = True
+        straightColumn = True
 
     if (straighRow == False):
         straighRow = True
