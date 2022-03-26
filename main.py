@@ -1,1 +1,1 @@
-print("Hi Kerem ve Selimo")
+print("Hi Kerem ve Selim")
