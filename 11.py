@@ -32,9 +32,12 @@ allNumbers = allNumbers.replace("\n" ,"")
 #The for loop will delete all spaces and turns in to integars
 for h in range (0, 20):
     for w in range(0, 20):
+        #This line of python code will take the number from list and turns into integar then puts in 2D array
         theNumbers[h][w] = int(allNumbers[temp] + allNumbers[temp + 1])
+        #This temp will remember what number that it was left
         temp = temp + 2
 
+#This for loop will do the numbers that at the rows ones like 25 76 03 89
 for h in range (0 ,20):
     for w in range (0 ,17):
         first = theNumbers[h][w]
@@ -44,6 +47,12 @@ for h in range (0 ,20):
         muliply = first * second * third * forth
         if (muliply > greatest):
             greatest = muliply
+
+#This for loop will do the the numbers that at the culumn ones like 34
+#                                                                   65
+#                                                                   06
+#                                                                   45
+
 for w in range (0 ,20):
     for h in range (0 ,17):
         first = theNumbers[h][w]
@@ -53,6 +62,12 @@ for w in range (0 ,20):
         muliply = first * second * third * forth
         if (muliply > greatest):
             greatest = muliply
+
+#This for loop finds the number that at the diagonal to the right like 45
+#                                                                        76
+#                                                                          87
+#                                                                            98
+
 for h in range (0 ,17):
     for w in range (0 ,17):
         first = theNumbers[h][w]
@@ -62,6 +77,12 @@ for h in range (0 ,17):
         muliply = first * second * third * forth
         if (muliply > greatest):
             greatest = muliply
+
+#This for loop finds the numbers that are in diagonal left like 67
+#                                                             89
+#                                                           34
+#                                                         03
+
 for h in range (0 ,17):
     for w in range (3 ,20):
         first = theNumbers[h][w]
