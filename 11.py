@@ -29,6 +29,7 @@ greatest = 0
 allNumbers = allNumbers.replace(" ","")
 allNumbers = allNumbers.replace("\n" ,"")
 
+#The for loop will delete all spaces and turns in to integars
 for h in range (0, 20):
     for w in range(0, 20):
         theNumbers[h][w] = int(allNumbers[temp] + allNumbers[temp + 1])
