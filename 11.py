@@ -1,5 +1,5 @@
 
-myString = """08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
+allNumbers = """08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
 81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
 52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91
@@ -22,54 +22,54 @@ myString = """08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 
 w = 20
 h = 20
-myArray= [[0 for x in range (h)] for y in range(w)]
+theNumbers= [[0 for x in range (h)] for y in range(w)]
 temp = 0
 straightColumn = False
 straighRow = False
 diagonal = False
 greatest = 0
 
-myString = myString.replace(" ","")
-myString = myString.replace("\n" ,"")
+allNumbers = allNumbers.replace(" ","")
+allNumbers = allNumbers.replace("\n" ,"")
 
 for h in range (0, 20):
     for w in range(0, 20):
-        myArray[h][w] = int(myString[temp] + myString[temp + 1])
+        theNumbers[h][w] = int(allNumbers[temp] + allNumbers[temp + 1])
         temp = temp + 2
 
 for h in range (0 ,20):
     for w in range (0 ,17):
-        first = myArray[h][w]
-        second = myArray[h][w + 1]
-        third = myArray[h][w + 2]
-        forth = myArray[h][w + 3]
+        first = theNumbers[h][w]
+        second = theNumbers[h][w + 1]
+        third = theNumbers[h][w + 2]
+        forth = theNumbers[h][w + 3]
         muliply = first * second * third * forth
         if (muliply > greatest):
             greatest = muliply
 for w in range (0 ,20):
     for h in range (0 ,17):
-        first = myArray[h][w]
-        second = myArray[h + 1][w]
-        third = myArray[h + 2][w]
-        forth = myArray[h + 3][w]
+        first = theNumbers[h][w]
+        second = theNumbers[h + 1][w]
+        third = theNumbers[h + 2][w]
+        forth = theNumbers[h + 3][w]
         muliply = first * second * third * forth
         if (muliply > greatest):
             greatest = muliply
 for h in range (0 ,17):
     for w in range (0 ,17):
-        first = myArray[h][w]
-        second = myArray[h + 1][w + 1]
-        third = myArray[h + 2][w + 2]
-        forth = myArray[h + 3][w + 3]
+        first = theNumbers[h][w]
+        second = theNumbers[h + 1][w + 1]
+        third = theNumbers[h + 2][w + 2]
+        forth = theNumbers[h + 3][w + 3]
         muliply = first * second * third * forth
         if (muliply > greatest):
             greatest = muliply
 for h in range (0 ,17):
     for w in range (3 ,20):
-        first = myArray[h][w]
-        second = myArray[h + 1][w - 1]
-        third = myArray[h + 2][w - 2]
-        forth = myArray[h + 3][w - 3]
+        first = theNumbers[h][w]
+        second = theNumbers[h + 1][w - 1]
+        third = theNumbers[h + 2][w - 2]
+        forth = theNumbers[h + 3][w - 3]
         muliply = first * second * third * forth
         if (muliply > greatest):
             greatest = muliply
