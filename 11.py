@@ -65,8 +65,8 @@ for h in range (0 ,17):
         print(first, second, third, forth)
         if (muliply > greatest):
             greatest = muliply
-for h in range (0 ,20 ,4):
-    for w in range (3 ,20 ,4):
+for h in range (0 ,17):
+    for w in range (3 ,20):
         first = myArray[h][w]
         second = myArray[h + 1][w - 1]
         third = myArray[h + 2][w - 2]
