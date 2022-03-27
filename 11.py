@@ -24,9 +24,6 @@ w = 20
 h = 20
 theNumbers= [[0 for x in range (h)] for y in range(w)]
 temp = 0
-straightColumn = False
-straighRow = False
-diagonal = False
 greatest = 0
 
 allNumbers = allNumbers.replace(" ","")
