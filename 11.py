@@ -74,3 +74,4 @@ for h in range (0 ,17):
         if (muliply > greatest):
             greatest = muliply
 print(greatest)
+#The result is 70600674
