@@ -62,7 +62,6 @@ for h in range (0 ,17):
         third = myArray[h + 2][w + 2]
         forth = myArray[h + 3][w + 3]
         muliply = first * second * third * forth
-        print(first, second, third, forth)
         if (muliply > greatest):
             greatest = muliply
 for h in range (0 ,17):
