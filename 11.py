@@ -38,7 +38,7 @@ for h in range (0, 20):
         temp = temp + 2
 
 for h in range (0 ,20):
-    for w in range (0 ,20 ,4):
+    for w in range (0 ,17):
         first = myArray[h][w]
         second = myArray[h][w + 1]
         third = myArray[h][w + 2]
@@ -46,10 +46,8 @@ for h in range (0 ,20):
         muliply = first * second * third * forth
         if (muliply > greatest):
             greatest = muliply
-            print(greatest)
-print("\n")
-for h in range (0 ,20 ,4):
-    for w in range (0 ,20):
+for w in range (0 ,20):
+    for h in range (0 ,17):
         first = myArray[h][w]
         second = myArray[h + 1][w]
         third = myArray[h + 2][w]
@@ -57,19 +55,16 @@ for h in range (0 ,20 ,4):
         muliply = first * second * third * forth
         if (muliply > greatest):
             greatest = muliply
-            print(greatest)
-print("\n")
-for h in range (0 ,20 ,4):
-    for w in range (0 ,20 ,4):
+for h in range (0 ,17):
+    for w in range (0 ,17):
         first = myArray[h][w]
         second = myArray[h + 1][w + 1]
         third = myArray[h + 2][w + 2]
         forth = myArray[h + 3][w + 3]
         muliply = first * second * third * forth
+        print(first, second, third, forth)
         if (muliply > greatest):
             greatest = muliply
-            print(greatest)
-print("\n")
 for h in range (0 ,20 ,4):
     for w in range (3 ,20 ,4):
         first = myArray[h][w]
@@ -79,5 +74,4 @@ for h in range (0 ,20 ,4):
         muliply = first * second * third * forth
         if (muliply > greatest):
             greatest = muliply
-            print(greatest)
 print(greatest)
