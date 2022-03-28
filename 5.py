@@ -3,30 +3,30 @@
 
 #For this code we need numbers below 21 we will calculate the LCM of them
 
-sum_of_numbers = 1
-prime_numbers = []
-for_test = 0
+sumOfNumbers = 1
+primeNumbers = []
+indicator = 0
 
 #This part of code will take the prime numbers below 21 and it will it to our list
 for i in range (2 ,21):
     for x in range (2 ,21):
-        for_test = 0
+        indicator = 0
         if (i == x):
             #If the prime number and numbers are the same it will change it but x for loop will turn the number twice
             x = x + 1
         if (i % x == 0):
-            #If the number enter this part the variable (for_test) will change like an indicator and loop will end
-            for_test = - 1
+            #If the number enter this part the variable (indicator) will change like an indicator and loop will end
+            indicator = - 1
             break
-    if (for_test == 0):
-        prime_numbers.append(i)
+    if (indicator == 0):
+        primeNumbers.append(i)
 
 #The exact meaning is in the 5.txt
-for i in range (0 ,len(prime_numbers)):
+for i in range (0 ,len(primeNumbers)):
     for x in range (4 ,0 ,-1):
-        if (prime_numbers[i] ** x < 21):
+        if (primeNumbers[i] ** x < 21):
             #We need all of the numbers to multiply
-            sum_of_numbers = sum_of_numbers * prime_numbers[i] ** x
+            sumOfNumbers = sumOfNumbers * primeNumbers[i] ** x
             #Here I did a break because i want only 2**4 if I don't use break it will do 2**4 * 2**3 * 2**2 * 2**1
             break
-print(sum_of_numbers)
+print(sumOfNumbers)
