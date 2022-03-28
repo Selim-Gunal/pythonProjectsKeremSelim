@@ -30,3 +30,4 @@ for i in range (0 ,len(primeNumbers)):
             #Here I did a break because i want only 2**4 if I don't use break it will do 2**4 * 2**3 * 2**2 * 2**1
             break
 print(sumOfNumbers)
+#The result is 232792560

@@ -25,3 +25,4 @@ while (len(primeNumbersList) < 10001):
 #This will reverse the prime numbers in the list
 primeNumbersList.sort(reverse=True)
 print(primeNumbersList[0])
+#The result is 104747

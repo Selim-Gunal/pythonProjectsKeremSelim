@@ -12,3 +12,4 @@ while (whatNumber < 2000000):
         primeNumbersList.append(whatNumber)
     whatNumber = whatNumber + 1
 print(primeNumbersList)
+#The result is

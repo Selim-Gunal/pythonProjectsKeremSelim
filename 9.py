@@ -31,3 +31,4 @@ while (True):
         break
 tripletNumbersList.reverse()
 print(int(tripletNumbersList[0] * tripletNumbersList[1] * tripletNumbersList[2]))
+#The result is 31875000

@@ -22,3 +22,4 @@ if (sumOfSquares > squareOfSum):
     print(sumOfSquares - squareOfSum)
 else:
     print(squareOfSum - sumOfSquares)
+#The result is 25164150

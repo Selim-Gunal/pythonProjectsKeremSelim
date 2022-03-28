@@ -19,5 +19,4 @@ for i in range (0 ,len(numbers_can_devide)):
     if(result > 0):
         break
 print(result)
-
-#Prints 6857
+#The result is 6857
