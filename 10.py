@@ -1,14 +1,14 @@
-which_prime = 2
-prime_numbers = []
-for_test = 0
+whatNumber = 2
+primeNumbersList = []
+indicator = 0
 
-while (which_prime < 2000000):
-    for x in range (2 ,which_prime):
-        for_test = 0
-        if (which_prime % x == 0):
-            for_test = 1
+while (whatNumber < 2000000):
+    for x in range (2 ,whatNumber):
+        indicator = 0
+        if (whatNumber % x == 0):
+            indicator = 1
             break
-    if (for_test == 0):
-        prime_numbers.append(which_prime)
-    which_prime = which_prime + 1
-print(prime_numbers)
+    if (indicator == 0):
+        primeNumbersList.append(whatNumber)
+    whatNumber = whatNumber + 1
+print(primeNumbersList)
