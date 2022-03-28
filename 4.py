@@ -2,18 +2,18 @@
 #Find the largest palindrome made from the product of two 3-digit numbers.
 
 #Our reverseable numbers will be stored in here
-numbers_list = []
+listOfNumbers = []
 
 for i in range (999 ,100 ,-1):
     for x in range (998 ,99 ,-1):
         #We changed it to the string because the reverse for strings is much more easier
-        straight_number = str(i * x)
-        reverse_number = straight_number[::-1]
+        straightNumber = str(i * x)
+        reverseNumber = straightNumber[::-1]
         #If they are the same it will add numbers to our list 
-        if (straight_number == reverse_number):
+        if (straightNumber == reverseNumber):
             #Here we turn back to integer
-            numbers_list.append(int(straight_number))
+            listOfNumbers.append(int(straightNumber))
 #In here i reversed the list so it will be bigger to smaller
-numbers_list.sort(reverse=True)
-print(numbers_list[0])
+listOfNumbers.sort(reverse=True)
+print(listOfNumbers[0])
 #The result is 906609

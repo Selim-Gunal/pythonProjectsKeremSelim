@@ -6,23 +6,23 @@ x = 1
 y = 2
 z = 0
 u = 0
-sum_of_numbers_that_can_devide_two = 0
+sumOfNumbersCanDevideTwo = 0
 
 #This while loop will give us a chance to get our numbers smaller than 4 million
 while (x < 4000000 and y < 4000000 and z < 4000000 and u < 4000000):
     z = x + y
     if (z % 2 == 0):
-        sum_of_numbers_that_can_devide_two = sum_of_numbers_that_can_devide_two + z
+        sumOfNumbersCanDevideTwo = sumOfNumbersCanDevideTwo + z
     u = y + z
     if (u % 2 == 0):
-        sum_of_numbers_that_can_devide_two = sum_of_numbers_that_can_devide_two + u
+        sumOfNumbersCanDevideTwo = sumOfNumbersCanDevideTwo + u
     x = z + u
     if (x % 2 == 0):
-        sum_of_numbers_that_can_devide_two = sum_of_numbers_that_can_devide_two + x
+        sumOfNumbersCanDevideTwo = sumOfNumbersCanDevideTwo + x
     y = u + x
     if (y % 2 == 0):
-        sum_of_numbers_that_can_devide_two = sum_of_numbers_that_can_devide_two + y
+        sumOfNumbersCanDevideTwo = sumOfNumbersCanDevideTwo + y
 
 #We've added two because at first we've started with 3 three
-print(sum_of_numbers_that_can_devide_two + 2)
+print(sumOfNumbersCanDevideTwo + 2)
 #The result is 4613732
