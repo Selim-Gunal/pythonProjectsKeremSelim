@@ -40,4 +40,7 @@ int main() {
         }
         cout << "\n";
     }
+    cout << "\n";
+    cout << "d";
+    cout << "\n";
 }
