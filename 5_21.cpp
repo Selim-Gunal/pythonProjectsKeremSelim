@@ -3,6 +3,7 @@
 using namespace std;
 
 int main (){
+    //a ,b ,c ,d Represents the shapes like a is the first shape
     int i ,a ,b ,c ,d ,cache;
     a = 1;
     b = 10;
@@ -16,6 +17,9 @@ int main (){
             cout << "*";
         }
         b = b - 1;
+        cout << "         ";
+
+
 
         cout << endl;
     }
