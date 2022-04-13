@@ -19,7 +19,7 @@ int main (){
         b = b - 1;
         cout << "         ";
 
-
+        for ()
 
         cout << endl;
     }

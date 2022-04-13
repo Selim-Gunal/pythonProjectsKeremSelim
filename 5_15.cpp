@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    int a ,a1 ,b ,b1 ,c ,c1 ,c2 ,d ,d1;
+    int a ,a1 ,b ,b1 ,c ,c1 ,c2 ,d ,d1 ,d2;
     bool indicator;
 
     cout << "a";
@@ -40,7 +40,18 @@ int main() {
         }
         cout << "\n";
     }
+
     cout << "\n";
     cout << "d";
     cout << "\n";
+
+    for (d = 0 ;d < 10 ;d = d + 1){
+        for (d1 = 9 - d ;d1 > 0 ;d1 = d1 - 1){
+            cout << " ";
+        }
+        for (d2 = d ;d2 < 10 ;d2 = d2 + 1){
+            cout << "*";
+        }
+        cout << endl;
+    }
 }
