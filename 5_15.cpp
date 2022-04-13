@@ -49,7 +49,7 @@ int main() {
         for (d1 = 9 - d ;d1 > 0 ;d1 = d1 - 1){
             cout << " ";
         }
-        for (d2 = d ;d2 < 10 ;d2 = d2 + 1){
+        for (d2 = d ;d2 >= 0 ;d2 = d2 - 1){
             cout << "*";
         }
         cout << endl;
