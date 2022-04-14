@@ -7,7 +7,7 @@ int main (){
     int i ,a ,b ,c ,d ,cache ,space ,cacheSpace ,secondSpace ,secondSpaceCache;
     a = 1;
     b = 10;
-    c = 10
+    c = 10;
     cacheSpace = 11;
     secondSpaceCache = 0;
     for (i = 0 ;i < 10 ;i = i + 1) {
@@ -18,7 +18,7 @@ int main (){
         }
         a = a + 1;
 
-        while (space != 1){
+        while (space != 0){
             cout << " ";
             space = space - 1;
         }
@@ -29,13 +29,15 @@ int main (){
         }
         b = b - 1;
 
-        for (secondSpace ;secondSpace < 19 ;secondSpace = secondSpace + 1){
-            cout << " ";
+        for (secondSpace ;secondSpace < 1 ;secondSpace = secondSpace + 1){
+            cout << "  ";
         }
+        secondSpaceCache = secondSpaceCache - 1;
 
         for (cache = c ;cache > 0 ;cache = cache - 1){
             cout << "*";
         }
+        c = c - 1;
 
         cout << endl;
     }
