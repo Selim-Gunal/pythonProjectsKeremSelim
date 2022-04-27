@@ -26,3 +26,4 @@ public class Third {
         }
     }
 }
+//The result is 6857
