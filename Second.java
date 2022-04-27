@@ -1,5 +1,4 @@
 public class Second {
-
     public static void main(String[] args) {
         int sum;
         int a ,b ;
@@ -17,7 +16,6 @@ public class Second {
             a = a + b;
             b = a + b;
         }
-
         System.out.println(sum);
     }
 }
