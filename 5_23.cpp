@@ -4,9 +4,8 @@ using namespace std;
 
 int main() {
     int i ,x ,hashtag ,hashtagCache ,star ,starCache ,whatLine;
-    bool starTest ,starIncreasePoint;
+    bool starIncreasePoint;
     whatLine = 0;
-    starTest = true;
     starCache = 7;
     starIncreasePoint = false;
     for (i = 0 ;i < 9 ;i = i + 1){
@@ -30,6 +29,10 @@ int main() {
 
         if (starIncreasePoint == false){
             starCache = starCache - 2;
+        }
+
+        if (starIncreasePoint == true){
+            starCache = starCache + 2;
         }
 
         cout << "#";
