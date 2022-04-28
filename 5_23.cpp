@@ -18,7 +18,7 @@ int main() {
             cout << "#";
         }
 
-        if (0 < whatLine and whatLine < 8){
+        if (0 < whatLine && whatLine < 8){
             for (star = 0 ;star < starCache ;star = star + 1){
                 cout << "*";
                 if (whatLine == 4){
