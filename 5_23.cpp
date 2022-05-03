@@ -6,7 +6,7 @@ int main() {
     int i ,x ,hashtag ,hashtagCache ,star ,starCache ,whatLine;
     bool starIncreasePoint;
     whatLine = 0;
-    starCache = 7;
+    starCache = 8;
     starIncreasePoint = false;
     for (i = 0 ;i < 9 ;i = i + 1){
         if (whatLine == 0 or whatLine == 8){
@@ -19,19 +19,16 @@ int main() {
         }
 
         if (0 < whatLine && whatLine < 8){
-            for (star = 0 ;star < starCache ;star = star + 1){
+            for (star = -1 ;star < starCache ;star = star + 1){
                 cout << "*";
-                if (whatLine == 4){
-                    starIncreasePoint = true;
-                }
             }
         }
 
-        if (starIncreasePoint == false){
+        if (whatLine < 4){
             starCache = starCache - 2;
         }
 
-        if (starIncreasePoint == true){
+        if (whatLine > 3){
             starCache = starCache + 2;
         }
 
