@@ -10,12 +10,13 @@ public class Forth {
                 multiply = i * x;
                 convertedToStr = String.valueOf(multiply);
                 cacheReverse = new StringBuilder(convertedToStr);
+                cacheReverse.reverse();
                 reversed = new String(cacheReverse);
 
-                if (!(convertedToStr.equals(reversed))){
-                    System.out.println(convertedToStr);
-                    System.out.println(reversed);
-
+                if (convertedToStr.equals(reversed)){
+                   if (multiply > biggest){
+                       biggest = multiply;
+                   }
                 }
             }
         }
