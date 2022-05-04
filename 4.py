@@ -4,8 +4,8 @@
 #Our reverseable numbers will be stored in here
 listOfNumbers = []
 
-for i in range (999 ,100 ,-1):
-    for x in range (998 ,99 ,-1):
+for i in range (999 ,99 ,-1):
+    for x in range (i ,99 ,-1):
         #We changed it to the string because the reverse for strings is much more easier
         straightNumber = str(i * x)
         reverseNumber = straightNumber[::-1]
