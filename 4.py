@@ -10,8 +10,6 @@ for i in range (999 ,99 ,-1):
         straightNumber = str(i * x)
         reverseNumber = straightNumber[::-1]
         #If they are the same it will add numbers to our list
-        if (straightNumber == "906609"):
-            print(i ,x)
         if (straightNumber == reverseNumber):
             #Here we turn back to integer
             listOfNumbers.append(int(straightNumber))
