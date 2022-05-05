@@ -1,6 +1,6 @@
 public class Fifth {
     public static void main(String[] args){
-        int i ,x ,cachePrimeNumber;
+        int i ,x ,y ,z ,cachePrimeNumber ,cacheBase;
         boolean primeNumberTest;
         for (i = 2 ;i < 21 ;i = i = 1){
             primeNumberTest = false;
@@ -12,7 +12,11 @@ public class Fifth {
                 }
             }
             if (primeNumberTest == false){
-                if ()
+                for (y = 4 ;y >= 0 ;y = y - 1){
+                    for (z = 0 ;z < y ;z = z + 1){
+
+                    }
+                }
             }
         }
     }
