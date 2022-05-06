@@ -3,7 +3,6 @@
 
 public class First {
     public static void main(String[] args) {
-        //I assign the variables
         int i, sum;
         sum = 0;
 
