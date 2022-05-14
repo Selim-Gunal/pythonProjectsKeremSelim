@@ -19,3 +19,4 @@ public class Seventh {
         System.out.println(i);
     }
 }
+//The result is 104743
