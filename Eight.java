@@ -2,6 +2,7 @@ import java.math.BigInteger;
 
 public class Eight {
     public static void main(String[] args){
+        //Here I make variables long beacuse it has byte limitations
         long i ,x ,z ,t ,biggest ,cacheThirtheenInt ,multiply ,nowNumber ,zero;
         String beforeAllNumbers ,afterAllNumbers ,cacheThirtheen;
         biggest = 0;
@@ -26,15 +27,21 @@ public class Eight {
                 "05886116467109405077541002256983155200055935729725\n" +
                 "71636269561882670428252483600823257530420752963450";
 
+        //I replace all enters with nothing
         afterAllNumbers = beforeAllNumbers.replace("\n" ,"");
 
         for (i = 0 ;i < afterAllNumbers.length() - 12 ;i = i + 1){
+            //Here I pull the thirtheen number
             cacheThirtheen = afterAllNumbers.substring((int) i, (int) (i + 13));
+            //And I converted into integer
             cacheThirtheenInt = Long.parseLong(cacheThirtheen);
             multiply = 1;
 
             for (z = 13 ;z > 0 ;z = z - 1){
+                //This for loop's very simple explanation is (xNumber = (cacheThirtheenInt / zero) % 10)
                 zero = 1;
+
+                //For loop zero adds 0 to 1 in order to devide the number
                 for (t = 1 ;t < z ;t = t + 1){
                     zero = zero * 10;
                 }
@@ -48,3 +55,4 @@ public class Eight {
         System.out.println(biggest);
     }
 }
+//The result is 23514624000
