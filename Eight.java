@@ -2,8 +2,8 @@ import java.math.BigInteger;
 
 public class Eight {
     public static void main(String[] args){
-        int i ,x ,biggest ,cacheFourInt ,multiply;
-        String beforeAllNumbers ,afterAllNumbers ,cacheFour;
+        long i ,x ,z ,t ,biggest ,cacheThirtheenInt ,multiply ,nowNumber ,zero;
+        String beforeAllNumbers ,afterAllNumbers ,cacheThirtheen;
         biggest = 0;
         beforeAllNumbers = "73167176531330624919225119674426574742355349194934\n" +
                 "96983520312774506326239578318016984801869478851843\n" +
@@ -28,15 +28,21 @@ public class Eight {
 
         afterAllNumbers = beforeAllNumbers.replace("\n" ,"");
 
-        for (i = 0 ;i < afterAllNumbers.length() - 3 ;i = i + 1){
-            cacheFour = afterAllNumbers.substring(i ,i + 4);
-            cacheFourInt = Integer.valueOf(cacheFour);
-            int thousands = cacheFourInt / 1000;
-            int hundreds = (cacheFourInt / 100) % 10;
-            int tens = (cacheFourInt / 10) % 10;
-            int ones = (cacheFourInt / 1) % 10;
-            if ((thousands * hundreds * tens * ones) > biggest){
-                biggest = thousands * hundreds * tens * ones;
+        for (i = 0 ;i < afterAllNumbers.length() - 12 ;i = i + 1){
+            cacheThirtheen = afterAllNumbers.substring((int) i, (int) (i + 13));
+            cacheThirtheenInt = Long.parseLong(cacheThirtheen);
+            multiply = 1;
+
+            for (z = 13 ;z > 0 ;z = z - 1){
+                zero = 1;
+                for (t = 1 ;t < z ;t = t + 1){
+                    zero = zero * 10;
+                }
+                nowNumber = (cacheThirtheenInt / zero) % 10;
+                multiply = multiply * nowNumber;
+            }
+            if (multiply > biggest){
+                biggest = multiply;
             }
         }
         System.out.println(biggest);
